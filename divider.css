@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --width-left: 50%;
+    --width-right: 50%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+
+    text-align: center;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    padding-top: 25%;
+}
+
+.left {
+    background-color: yellow;
+    flex-basis: var(--width-left);
+}
+
+.right {
+    background-color: coral;
+    flex-basis: var(--width-right);
+}
+
+.vr {
+    width: 5px;
+    background-color: black;
+    height: 100%;
+}
+
+.vr:hover {
+    cursor: grabbing;
+}
